@@ -12,6 +12,6 @@ public class LoginController {
     @RequestMapping("/welcome")
     public String welcome()
     {
-        return "Welcome back";
+        return "Welcome back to jenkins";
     }
 }
