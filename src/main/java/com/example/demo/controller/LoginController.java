@@ -12,6 +12,6 @@ public class LoginController {
     @RequestMapping("/welcome")
     public String welcome()
     {
-        return "Welcome back to jenkins1-3     ";
+        return "Welcome back to jenkins- new update CICD";
     }
 }
