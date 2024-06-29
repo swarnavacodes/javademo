@@ -9,9 +9,9 @@ pipeline {
             steps {
                 echo "Building.."
                         sh '''
-          curl -sSL -o /tmp/apache-maven-38.6.0.tar.gz https://downloads.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
-          tar -xzf /tmp/apache-maven-38.6.0.tar.gz -C /opt
-          export PATH=/opt/apache-maven-38.6.0/bin:$PATH
+          sudo curl -sSL -o /tmp/apache-maven-38.6.0.tar.gz https://downloads.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
+          sudo tar -xzf /tmp/apache-maven-38.6.0.tar.gz -C /opt
+          sudo export PATH=/opt/apache-maven-38.6.0/bin:$PATH
           mvn clean package
         '''
             }
