@@ -9,9 +9,9 @@ pipeline {
             steps {
                 echo "Building.."
                         sh '''
-          sudo curl -sSL -o /tmp/apache-maven-38.6.0.tar.gz https://downloads.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
-          sudo tar -xzf /tmp/apache-maven-38.6.0.tar.gz -C /opt
-          sudo export PATH=/opt/apache-maven-38.6.0/bin:$PATH
+                  curl -sSL -o /tmp/apache-maven-38.8.tar.gz https://downloads.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
+                  tar -xzf /tmp/apache-maven-38.8.tar.gz -C /home/jenkins/maven  # Replace with your desired directory
+                  export PATH=/home/jenkins/maven/bin:$PATH
           mvn clean package
         '''
             }
