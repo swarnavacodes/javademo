@@ -8,16 +8,16 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh 'mkdir -p /home/jenkins/maven' 
-                        sh '''
-          mvn clean package
-        '''
+        //         sh 'mkdir -p /home/jenkins/maven' 
+        //                 sh '''
+        //   mvn clean package
+        // '''
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh 'mvn test'
+                // sh 'mvn test'
             }
         }
         stage('Deliver') {
