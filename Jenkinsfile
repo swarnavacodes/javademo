@@ -9,9 +9,9 @@ pipeline {
             steps {
                 echo "Building.."
         //         sh 'mkdir -p /home/jenkins/maven' 
-        //                 sh '''
-        //   mvn clean package
-        // '''
+                        sh '''
+          mvn clean package
+        '''
             }
         }
         stage('Test') {
